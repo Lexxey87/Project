@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="js/calc.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/calc.css">
+    <style>
+            .greenWrap {
+                border: none;
+                color: white;
+                padding: 15px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+                margin: 0px 0px;
+                cursor: pointer;
+                width: 45px;
+            }
+            
+            .greenWrap.plus {border-radius: 8px; background-color: #4CAF50;}
+            .greenWrap.minus {border-radius: 8px; background-color: #008CBA;}
+            .greenWrap.multiply {border-radius: 8px; background-color: #f44336;}
+            .greenWrap.divide {border-radius: 8px; background-color: #e7e7e7;}
+            .greenWrap.exponent {border-radius: 8px; background-color: #555555;}
+    </style>
+    <style> 
+            input[type=text] {
+                width: 12%;
+                padding: 10px 12px;
+                margin: 0px 0;
+                box-sizing: border-box;
+                border: 2px solid #008CBA;;
+                border-radius: 8px;
+            }
+    </style>
+</head>
+<body>
+    <h2>Basic Calculator</h2>
+    <p>Number 1: <input type="text" id="n1"></p>
+    <p>Number 2: <input type="text" id="n2"></p>
+    <button class="greenWrap plus" onclick="plus()">+</button>
+    <button class="greenWrap minus" onclick="minus()">-</button>
+    <button class="greenWrap multiply" onclick="multiply()">*</button>  
+    <button class="greenWrap divide" onclick="divide()">/</button>
+    <button class="greenWrap exponent" onclick="exponent()">n*</button>
+    <hr>
+    <p id="out">Result:</p>
+</body>
+</html>
